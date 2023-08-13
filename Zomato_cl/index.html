@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- fontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css"
+        integrity="sha512-W/zrbCncQnky/EzL+/AYwTtosvrM+YG/V6piQLSe2HuKS6cmbw89kjYkp3tWFn1dkWV7L1ruvJyKbLz73Vlgfg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow-x: hidden;
+        }
+
+        #header-img {
+            position: relative;
+            width: 100vw;
+            height: 400px;
+            background-image: linear-gradient(to right, rgba(70, 69, 69, 0.699), rgba(14, 2, 2, 0.723)), url('./veg33.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        header {
+            width: 100vw;
+            height: 60px;
+        }
+
+        .nav-menu {
+            width: 60vw;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .float-left{
+            position: absolute;
+            left: 10px;
+        }
+        .float-right-a{
+            position: absolute;
+            right: 30px;
+        }
+        .float-right-b{
+            position: absolute;
+            right: 150px;
+        }
+        .zomato {
+            display: block;
+            font-weight: bolder;
+            color: white;
+            text-align: center;
+            margin: 0;
+            font-size: 68px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .header-flex {
+            margin-top: 100px;
+        }
+
+        .nav-link {
+            border-bottom: 0px solid black;
+            transition: border-bottom 0.3s;
+            cursor: pointer;
+        }
+
+        .nav-link:hover {
+            border-bottom: 5px solid white;
+        }
+
+        .search-box {
+            width: 30vw;
+            height: 60px;
+            background-color: white;
+            border: none;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            padding-left: 20px;
+            outline: none;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .search-btn {
+            width: 130px;
+            background-color: red;
+            color: white;
+            border: none;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            font-weight: bold;
+            font-size: 20px;
+
+        }
+
+        #second-section {
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        .card {
+            width: 100%;
+            height: 200px;
+            background-color: white;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 1px 1px 10px #cbc4c4;
+            overflow: hidden;
+            transition: box-shadow 0.3s;
+            margin-bottom: 10px;
+        }
+
+        .card:hover {
+            box-shadow: 1px 1px 10px #000;
+            cursor: pointer;
+        }
+
+        .card-bottom {
+            position: absolute;
+            background-color: white;
+            height: 50px;
+            width: 100%;
+            margin-top: 150px;
+        }
+    </style>
+    <title>Zomato | Home</title>
+</head>
+
+<body>
+    <div id="header-img">
+        <!-- first -->
+        <header>
+            <div class="d-flex justify-content-center ">
+                <div class="nav-menu">
+                    <p class="float-left text-white m-0 mt-3">Get the App</p>
+                    <p class="float-right-a text-white m-0 mt-3 h4 nav-link">Sign Up</p>
+                    <p class="float-right-b text-white m-0 mt-3 h4 nav-link">Login</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- second -->
+        <div class="container">
+            <div class="d-flex justify-content-center header-flex">
+                <p class="zomato"> Zomato</p>
+            </div>
+            <div class="d-flex justify-content-center mt-4">
+                <input type="text" placeholder="search for dishes or cusines..." class="search-box">
+                <button class="search-btn">Search</button>
+            </div>
+        </div>
+    </div>
+
+    <section id="second-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="./cake.jpg">
+                        <div class="card-bottom">
+                            <p class="h4 m-0 mt-2 text-center">Order Online</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="./cake.jpg">
+                        <div class="card-bottom">
+                            <p class="h4 m-0 mt-2 text-center">Order Online</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="./cake.jpg">
+                        <div class="card-bottom">
+                            <p class="h4 m-0 mt-2 text-center">Order Online</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="./cake.jpg">
+                        <div class="card-bottom">
+                            <p class="h4 m-0 mt-2 text-center">Order Online</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- third -->
+
+    <section id="popular-locations">
+        <div class="container">
+            <div class="d-flex justified-content-center">
+ <p class="popular-heading"> Popular locations in and around
+        <span class="font-weight-bold">Kolkata</span> </p>        
+    </div>
+    <div class="row mt-4">
+        <div class="col md-4">
+            <div class="d-flex align-items-center"></div>
+        </div>
+        <div class="col md-4"></div>
+        <div class="col md-4"></div>
+    </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
